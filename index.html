@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7057e8">
+  <meta name="description" content="친구와 함께 즐기는 참참참 게임!">
+  <title>참참참 게임</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game-container">
+    <header>
+      <h1>✋ 참참참!</h1>
+      <p>컴퓨터와 방향 대결을 해보세요!</p>
+    </header>
+
+    <section class="score-board">
+      <div>
+        <span>나</span>
+        <strong id="playerScore">0</strong>
+      </div>
+      <div class="score-divider">VS</div>
+      <div>
+        <span>컴퓨터</span>
+        <strong id="computerScore">0</strong>
+      </div>
+    </section>
+
+    <section class="battle">
+      <div class="player">
+        <div class="avatar">😎</div>
+        <h2>PLAYER</h2>
+        <div class="arrow" id="playerArrow">❔</div>
+      </div>
+
+      <div class="vs">VS</div>
+
+      <div class="player">
+        <div class="avatar">🤖</div>
+        <h2>COMPUTER</h2>
+        <div class="arrow" id="computerArrow">❔</div>
+      </div>
+    </section>
+
+    <section class="result-box">
+      <h2 id="result">준비됐나요?</h2>
+      <p id="message">아래 버튼을 눌러 대결하세요!</p>
+    </section>
+
+    <section class="controls">
+      <h3>어느 방향으로?</h3>
+      <div class="buttons">
+        <button data-direction="left">⬅️</button>
+        <button data-direction="up">⬆️</button>
+        <button data-direction="right">➡️</button>
+      </div>
+    </section>
+
+    <button id="resetButton" class="reset-button">
+      🔄 게임 다시 시작
+    </button>
+
+    <footer>
+      <p>방향이 다르면 승리! 같으면 패배!</p>
+    </footer>
+  </main>
+</body>
+</html>
